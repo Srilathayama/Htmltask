@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* Hero Image */
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Section Layouts */
+
+.about,
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 10%;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-img,
+.menu-img {
+    flex: 1;
+}
+
+.about-img img,
+.menu-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-text,
+.menu-text {
+    flex: 1;
+}
+
+.about-text h2,
+.menu-text h2,
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.about-text h4 {
+    font-weight: 300;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.about-text p,
+.menu-text p,
+.contact p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.menu-text h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.gray {
+    color: #777;
+}
+
+
+/* Contact */
+
+.contact {
+    padding: 40px 10%;
+    background-color: #f9f9f9;
+}
+
+.contact a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact h4 {
+    font-weight: 600;
+    color: #5a5a5a;
+    margin: 10px 0;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .about,
+    .menu {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .about-text,
+    .menu-text {
+        padding: 0;
+    }
+}
